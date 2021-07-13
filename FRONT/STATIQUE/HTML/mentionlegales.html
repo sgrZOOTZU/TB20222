@@ -1,0 +1,139 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+    <link rel="stylesheet" href="CSS/click.css"
+<head>
+	<meta charset="utf-8">
+    </head>
+<body>
+
+  <script>document.onkeydown = function(e){
+  var keyCode = e.keyCode || e.charCode;
+  if (keyCode == 32) e.preventDefault();
+};</script>    
+    
+  
+	<div class="page">
+
+
+
+		<div class="headpic fixed">
+		 	<div class="wrp">
+				<header id="header">
+			 		<a class="logotype" href="/" title="Click Test"><front size="6"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+</front>
+					</a><br><br>
+					<div class="topbar">
+				
+ 
+						
+						<a href="#" id="closemenu"><span><svg class="icon icon-cross"><use xlink:href="#icon-cross"></use></svg></span></a>
+					</div>
+				</header>
+			</div>
+   
+		</div>
+
+        <div id="content">
+        
+   
+  <div class="clicktest"> 
+      
+      
+
+
+  </style>    
+      <br><br>
+  <center><div id="ClickCount">
+0
+ </div>
+<div id="ClickResultInfo">
+
+</div>
+    
+<div>
+ <button id="ClickButton" onclick="ClickButtonPressed()"><front size="3"><i class="fa fa-hand-pointer-o" aria-hidden="true"></i>
+Bah click enfaite...</front></button>
+    
+
+
+    
+    <br><br>
+  
+  <button onclick="restart()" id="ClearClicksResult">RESTART</button>
+    <button id="restartMaxScore" onclick="restartMaxScore()">RESET</button>
+    <button disabled="disabled" id="StopClicks" onclick="StopClicks()">STOP</button>
+  
+</div>  
+
+      
+<script>var Clicks = 0, Timer = 10, TestTime = 5;
+var ClicksCount = document.getElementById("ClickCount");
+var ClickResultInfo = document.getElementById("ClickResultInfo");
+var ClickButton = document.getElementById("ClickButton");
+var ClearClicksResult = document.getElementById("ClearClicksResult");
+var StopClicksButton = document.getElementById("StopClicks");
+var ClickInterval = null;
+var ClicksOn = false;
+var maxScore = 0;
+
+
+
+
+if (document.cookie.length > 0) {
+    var cookieArr = document.cookie.toString().split(";");
+    for (var i = 0; i < cookieArr.length; i++) {
+        if (cookieArr[i].match(/_10sec_click_test_max_score/i)) {
+            maxScore = cookieArr[i].replace(/.*=(.*)/, "$1");
+        }
+    }
+}
+function ClickButtonPressed() {
+    if (!ClickInterval) {
+        StopClicksButton.removeAttribute("disabled");
+        ClickInterval = setTimeout(TimerDown, 1000);
+        Timer--;
+    }
+    Clicks++;
+    ClicksCount.innerHTML = '<span>' + Clicks + '</span>';
+}
+function TimerDown() {
+    if (Timer > 0) {
+        ClickInterval = setTimeout(TimerDown, 1000);
+        Timer--;
+    } else if (Timer == 5) {
+        clearTimeout(ClickInterval);
+        ClickButton.setAttribute("disabled", "disabled");
+        StopClicksButton.setAttribute("disabled", "disabled");
+        ClearClicksResult.removeAttribute("disabled");
+document.getElementById("restartMaxScore").removeAttribute("disabled");
+        if (maxScore < Clicks) {
+            maxScore = Clicks;
+            setMaxScore();
+        }
+        
+    }
+}
+function 
+Pressed() {
+    Clicks = 0;
+    Timer = TestTime;
+    ClickButton.removeAttribute("disabled");
+    ClearClicksResult.setAttribute("disabled", "disabled");
+  document.getElementById("restartMaxScore").setAttribute("disabled", "disabled");
+    StopClicksButton.innerHTML = 'Stop';
+    StopClicksButton.setAttribute("disabled", "disabled");
+    ClicksCount.innerHTML = '0';
+    ClickInterval = null;
+}
+
+
+function restart() {
+  document.location.reload();
+}</script>
+
+    	
+
+
+</body>
+</html>
