@@ -1,0 +1,17 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+.btn{
+    padding: 15px 30px;
+    margin: 0 10px;
+    border: none;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-grey{
+    background-color: rgb(255, 0, 0);
+}

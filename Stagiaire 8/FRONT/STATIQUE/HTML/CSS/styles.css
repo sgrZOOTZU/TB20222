@@ -1,0 +1,60 @@
+body {
+    margin: auto;
+    height: auto;
+    width: 100%;
+    max-width: 1000px;
+}
+
+img.displayed {
+    float:left;
+    display: block;
+    margin-left: 15px;
+    margin-right: auto 
+}
+
+.title{
+    font-size: 25px;
+    padding: 10px;
+    margin: 5px;
+    display: flex; 
+    justify-content:center; 
+}
+
+a:link, a:visited{
+    color: rgb(255, 255, 255);
+}
+
+.box-one{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 4px 0 ;
+    height: auto;
+    width: auto;
+    
+}
+
+ul li{
+    display: inline;
+  }
+
+.promo{
+    max-width: 100%;
+    height: auto;
+}
+   
+hr.color {
+    border-top: 1px solid rgba(173, 173, 173, 0.616);
+  }  
+
+#container{
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 520px;
+    display: flex;
+}
+
+.box-two{
+    background-color: rgba(173, 173, 173, 0.493);
+    height: auto;
+    width: 40%;
+}
