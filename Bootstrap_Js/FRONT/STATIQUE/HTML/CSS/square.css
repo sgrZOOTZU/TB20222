@@ -9,9 +9,9 @@ body{
     height: 500px;
     width: 500px;
     border: 5px solid blue;
-    border-image: linear-gradient(to right, #03001e, #7303c0, #ec38bc, #fdeff9);
-    border-image-slice: 2;
+    border-image: linear-gradient(to right, #fc466b, #3f5efb);
+    border-image-slice: 1;
 }
 p{
-    color: white;
+    color: rgb(92, 110, 107);
 }

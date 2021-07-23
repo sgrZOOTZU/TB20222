@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>JAVASCRIPT</title>
+  </head>
+  <body>
+    <h1 style="text-align: center;">ȷᐱᐯᐱśƇɌɨÞƮ.15</h1>
+    <form action="http://bienvu.net/script.php" method="POST" id="formulaire" name="formulaire" onsubmit="return validateForm()">
+
+      <h1>Vos coordonnées :</h1>
+      <h3 style="color: red;">* Ces zones sont obligatoires pour envoyer le formulaire.</h3>
+
+      <table style="margin-left: 70px;">
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="societer">Société : </label></th>
+          <td style="color: red;">
+            <input type="text" name="societer" id="societer" style="margin-left: 20px;" pattern="[A-z0-9À-ž\s]{1,}"> * <span id="erreur1"></span></td>
+    
+        </tr>
+        <br>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="contact">Personne à contacter : </label></th>
+          <td style="color: red;">
+            <input type="text" name="contact" id="contact" style="margin-left: 20px;"> * <span id="erreur2"> * </span></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="adress">Adresse de l'entreprise : </label></th>
+          <td><textarea name="adress" cols="25" rows="5" id="adress" style="margin-left: 20px;"></textarea></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="codepostal">Code Postal : </label></th>
+          <td style="color: red;">
+            <input type="text" name="codepostal" id="codepostal" style="margin-left: 20px;" pattern="[\d]{5}"> * <span id="erreur3"></span></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="ville">Ville : </label></th>
+          <td style="color: red;">
+            <input type="text" name="ville" id="ville" style="margin-left: 20px;" parttern="^\p{Lu}\p{L}(?:[\s-]\p{Lu}\p{L})*$"> * <span id="erreur4"></span></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="email">E-mail : </label></th>
+          <td style="color: red;">
+            <input type="text" name="email" id="email" style="margin-left: 20px;" pattern="[a-z\d.-]+@[a-z\d.-]{2,}.[a-z]{2,4}"> * <span id="erreur5"></span></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="tel">Téléphone : </label></th>
+          <td style="color: red;">
+            <input type="text" name="tel" id="tel" style="margin-left: 20px;" pattern="0[1-9]([-. ]?\d{2}){4}$"></td>
+        </tr>
+        <tr>
+          <th style="text-align: start; font-size: 20pt;"><label for="projet">Sélectionnez l'environnement technique du projet : </label>
+            <br>
+            <br>
+            <select name="selection" id="projet" onchange="affiche_projet();" style="margin-left: 320px; width: 250px;">
+              <option value="setionnersujet" selected disabled="">Choissisez</option>
+              <option value="access">Access</option>
+              <option value="java">Java</option>
+              <option value="delphi">Delphi</option>
+              <option value="windev">Windev</option>
+              <option value="visualbasic">Visual Basic</option>
+              <option value="powerbuilder">Power Builder</option>
+              <option value="internet">Internet</option>
+              <option value="intranet">Intranet</option>
+              <option value="windows NT">Windows NT</option>
+              <option value="unix">Unix</option>
+              <option value="sqlserver">SQL Server</option>
+              <option value="oracle">Oracle</option>
+              <option value="autres">Autres...</option>           
+            </select>
+          <td><textarea name="projet" cols="25" rows="5" id="projet" style="margin-left: 20px;"></textarea></td>
+        </tr>
+      </table>
+
+      <input type="submit" value="Envoyer" id="bouton_envoi" style="margin-left: 710px;">
+      <input type="reset" value="Effacer">
+    </form>
+
+    <p style="color: red;" id="erreur"></p>
+
+   <script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,178 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.button1 {
+    text-align: center;
+    padding: 10px 40px;
+    float: center;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button1:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.button2 {
+    text-align: center;
+    padding: 10px 40px;
+    float: center;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button2:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.button3 {
+    text-align: center;
+    padding: 10px 40px;
+    float: center;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button3:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.button4 {
+    text-align: center;
+    padding: 10px 40px;
+    float: center;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button4:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+.button5 {
+    text-align: center;
+    padding: 10px 40px;
+    float: center;
+    border-radius: 10px;
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #3498DB;
+    border-bottom: 5px solid #2980B9;
+    text-shadow: 0px -2px #2980B9;
+    transition: all 0.1s;
+    -webkit-transition: all 0.1s;
+}
+
+.button5:active {
+    transform: translate(0px,5px);
+    -webkit-transform: translate(0px,5px);
+    border-bottom: 1px solid;
+}
+
+body {
+    font-family: Raleway;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin: 400px;
+    padding: 0px;
+    font-size: 16px;
+}
+
+.content {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.content p {
+    margin-bottom: 15px;
+    font-size: 19px;
+    line-height: 1.4;
+}
+
+.floating-btn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 75px;
+    height: 75px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background: linear-gradient();
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.floating-btn img{
+    width: 35px;
+    height: 35px;
+
+}
+
+.floating-btn .return {
+    position: absolute;
+    background: white;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 3px;
+    line-height: 1.4;
+    text-align: left;
+    width: 250px;
+    transform: translate(-180px, -50%);
+    box-shadow: 0 2px 15px rgb(0, 0, 0, 0.2);
+    pointer-events: none;
+    display: none;
+}
+
+.floating-btn:hover .return {
+    display: block;
+}

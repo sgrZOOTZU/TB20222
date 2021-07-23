@@ -8,7 +8,18 @@
     <title>JAVASCRIPT</title>
 </head>
 <body>
-    <h1 style="text-align: center;">JAVASCRIPT.5</h1>
-    <script src="script.js"></script>
+    <h1 style="text-align: center;">ȷᐱᐯᐱśƇɌɨÞƮ.5</h1>
+    <script>
+        var nom = window.prompt("Saisissez votre nom");
+        var prenom = window.prompt("Saisissez votre prénom");
+
+        if (window.confirm('Êtes vous un homme ?') == true)
+        {
+            window.alert(" Bonjour Monsieur " + nom + " " + prenom + ". Bienvenue sur notre site.");
+        }
+        else{
+            window.alert("Bonjour Madame " + nom + " " + prenom + ". Bienvenue sur notre site.")
+        }
+    </script>
 </body>
 </html>
