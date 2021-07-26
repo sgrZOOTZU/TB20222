@@ -118,7 +118,7 @@
 
 body {
     font-family: Raleway;
-    background-color: white;
+    background-color: linear-gradient(to right, #ece9e6, #ffffff);;
     display: flex;
     justify-content: center;
     margin: 400px;

@@ -15,7 +15,7 @@ var cookieclick;
         for (var i = 0; i < cookieArr.length; i++) {
             if (cookieArr[i].match(/_10sec_click_test_max_score/i)) {
                 maxScore = cookieArr[i].replace(/.*=(.*)/, "$1");
-                cookieclick = cookieArr[i].replace(/_10sec_click_test_max_score/i"$1");
+                cookieclick = cookieArr[i].replace(/_10sec_click_test_max_score/i, "$1");
             }
         }
     }

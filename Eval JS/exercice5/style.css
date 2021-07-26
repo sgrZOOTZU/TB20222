@@ -12,8 +12,8 @@
 
 body {
     font-family: Raleway;
-    background-color: black;
-    color: white;
+    background-color: white;
+    color: black;
     display: flex;
     margin: 400px;
     padding: 20px;

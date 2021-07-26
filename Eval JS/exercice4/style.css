@@ -1,29 +1,7 @@
-*, ::before, ::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-.eval {
+body{
     justify-content: center;
-    color: firebrick;
-    padding: px;
-}
-
-body {
-    font-family: Raleway;
-    background-color: white;
-    color: black;
-    display: flex;
-    margin: 400px;
-    padding: 20px;
-    font-size: 16px;
-}
-
-.content {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 0 20px;
+    align-items: center;
+    background: white;
 }
 
 .floating-btn {
@@ -64,26 +42,4 @@ body {
 
 .floating-btn:hover .return {
     display: block;
-}
-
-.button1 {
-    text-align: center;
-    padding: 10px 40px;
-    float: center;
-    border-radius: 10px;
-    font-family: 'Pacifico', cursive;
-    font-size: 25px;
-    color: #ffffff;
-    text-decoration: none;
-    background-color: #3498DB;
-    border-bottom: 5px solid #2980B9;
-    text-shadow: 0px -2px #2980B9;
-    transition: all 0.1s;
-    -webkit-transition: all 0.1s;
-}
-
-.button1:active {
-    transform: translate(0px,5px);
-    -webkit-transform: translate(0px,5px);
-    border-bottom: 1px solid;
 }
